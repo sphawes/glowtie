@@ -11,15 +11,20 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
+#include <EEPROM.h>
+
+
 
 #define PIN            12
 #define NUMPIXELS      13
+
+#define SN "MellowHare"
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
 ADC_MODE(ADC_VCC);
 
-const char *ssid = "GlowtieV0.4_1";
+const char *ssid = SN;
 const char *password = "pleaseletmein";
 
 ESP8266WebServer server(80);
@@ -32,10 +37,10 @@ float avgBatt = 3300;
 int newBatt = 0;
 
 int delayVal = 8; 
-int btMode = 5;
-int rVal = 20;
+int btMode = 0;
+int rVal = 0;
 int gVal = 0;
-int bVal = 20;
+int bVal = 0;
 int brightness = 50;
 int checkBattTimer = 0;
 int prevMode = 0;
@@ -57,6 +62,14 @@ void setup() {
   Serial.begin(9600); 
   
   pixels.begin(); 
+
+  //storing 4 eeprom values. the 0th is the saved mode, then the 1-3th are r, g, and b values, respectively. 4 bytes per int with 4 ints is 16 bytes:
+  EEPROM.begin(512);
+
+  btMode = EEPROM.read(0);
+  rVal = EEPROM.read(4);
+  gVal = EEPROM.read(8);
+  bVal = EEPROM.read(12);
 
   //CHECKING BATTERY
   /*
@@ -81,7 +94,7 @@ void setup() {
   */
   //Animation
   for(int j = 0;j<300;j++){
-      burst(10,10,10);
+      burst(50,20,0);
       delay(10);
   }
 
@@ -203,6 +216,12 @@ void handleRoot(){
     rVal = red;
     gVal = green;
     bVal = blue;
+
+    EEPROM.write(0, btMode);
+    EEPROM.write(4, rVal);
+    EEPROM.write(8, gVal);
+    EEPROM.write(12, bVal);
+    EEPROM.commit(); 
   }
   
   String html ="<!DOCTYPE html> <html> <head> <title>Glowtie</title> <style> body { background-color: #000000; font-family: \"Helvetica\"; color: #ffffff; } .slider{ width:90%; } #colorUpdate{ background-color: black; width:200px; height:40px; margin:auto; text-align: center; padding:20px; border-radius: 10px; } </style> <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0\" /> <script> console.log(\"Inline JS running.\"); function updateColor(){ var red = document.forms['settings'].red.value; var green = document.forms['settings'].green.value; var blue = document.forms['settings'].blue.value; var rgb = blue | (green << 8) | (red << 16); var color = \"#\" + (0x1000000 + rgb).toString(16).slice(1); document.getElementById(\"colorUpdate\").style.backgroundColor = color; } </script> </head> <body> <h1 id=\"colorUpdate\">Glowtie</h1> <form action=\"\" name=\"settings\" id=\"settings\" method=\"post\"> <!--Color: <input class=\"jscolor\" value=\"ffffff\" name=\"color\">--> Red:<br /> <input type=\"range\" class=\"slider\" min=\"0\" max=\"255\" value=\"127\" name=\"red\" onchange=\"updateColor()\"><br /> Green<br /> <input type=\"range\" class=\"slider\" min=\"0\" max=\"255\" value=\"127\" name=\"green\" onchange=\"updateColor()\"><br /> Blue<br /> <input type=\"range\" class=\"slider\" min=\"0\" max=\"255\" value=\"127\" name=\"blue\" onchange=\"updateColor()\"><br /> <input type=\"radio\" name=\"mode\" value=\"0\" checked> Off<br /> <input type=\"radio\" name=\"mode\" value=\"2\"> Solid<br /> <input type=\"radio\" name=\"mode\" value=\"3\"> Infinity<br /> <input type=\"radio\" name=\"mode\" value=\"4\"> Breathe<br /> <input type=\"radio\" name=\"mode\" value=\"5\"> Burst<br /><br /> <button onclick=\"document.forms['settings'].submit()\" type=\"button\">Send to Glowtie!</button> </form> </body> </html>";
