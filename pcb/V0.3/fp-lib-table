@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name ESP8266)(type KiCad)(uri /Users/shawes/Drive/other/kicadLibraries/ESP8266.pretty)(options "")(descr ""))
+  (lib (name stephen)(type KiCad)(uri /Users/stephen/Drive/other/kicadLibraries/stephen.pretty)(options "")(descr ""))
+  (lib (name LC709203FQH-01TWG)(type Legacy)(uri /Users/stephen/Downloads/LIB_LC709203FQH-01TWG/LC709203FQH-01TWG/KiCad/LC709203FQH-01TWG.mod)(options "")(descr ""))
+)

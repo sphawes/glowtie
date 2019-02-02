@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glowtie</title>
+    <style>
+
+      body { 
+        background-color: #000000; 
+        font-family: "Helvetica"; 
+        color: #ffffff;
+      }
+      .slider{
+        width:90%;
+
+      }
+      #colorUpdate{
+        background-color: black;
+        width:200px;
+        height:40px;
+        margin:auto;
+        text-align: center;
+        padding:20px;
+        border-radius: 10px;
+
+      }
+
+
+
+    </style>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+      //alert("inline js working in spiffs");
+      function updateColor(){
+        document.getElementById("colorUpdate").style.backgroundColor = document.forms['settings'].color.value;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="colorUpdate">Glowtie</h1>
+    
+    <form action="" name="settings" id="settings" method="post">
+      <input type="color" name="color" style="text-align: center;" onchange="updateColor()">
+    
+      <br />
+      <input type="radio" name="mode" value="0"> Off<br />
+      <input type="radio" name="mode" value="2"> Solid<br />
+      <input type="radio" name="mode" value="3"> Infinity<br />
+      <input type="radio" name="mode" value="4"> Breathe<br />
+      <input type="radio" name="mode" value="5"> Burst <br />
+      <button onclick="document.forms['settings'].submit()" type="button">Send to Glowtie!</button>
+    </form>
+
+
+  </body>
+</html>

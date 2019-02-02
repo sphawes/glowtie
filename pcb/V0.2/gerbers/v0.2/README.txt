@@ -1,0 +1,1 @@
+first version sent out to board shop (elecrow) designed for double side, no charging complete or charging indicator lights
