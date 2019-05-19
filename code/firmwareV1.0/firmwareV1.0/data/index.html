@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Glowtie</title>
+    <style>
+
+      body { 
+        background-color: #000000; 
+        font-family: "Helvetica"; 
+        color: #ffffff;
+      }
+      .slider {
+        -webkit-appearance: none;  /* Override default CSS styles */
+        appearance: none;
+        width: 100%; /* Full-width */
+        margin:auto;
+        margin-bottom:40px;
+        margin-top:10px;
+        height: 25px; /* Specified height */
+        background:black; /* Grey background */
+        outline: none; /* Remove outline */
+        opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+        -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+        transition: opacity .2s;
+        border:3px solid white;
+
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Override default look */
+        appearance: none;
+        width: 50px; /* Set a specific slider handle width */
+        height: 50px; /* Slider handle height */
+        background: white; /* Green background */
+        cursor: pointer; /* Cursor on hover */
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      #sliderCont {
+        width:70%;
+        margin:auto;
+
+      }
+
+      #colorUpdate{
+        background-color: black;
+        width:200px;
+        height:40px;
+        margin:auto;
+        text-align: center;
+        padding:20px;
+        border-radius: 10px;
+        font-family:'Courier New', Courier, monospace
+        
+
+      }
+
+      .container {
+        display: block;
+        position: relative;
+        padding-left: 80px;
+        padding-top:5px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        font-size: 22px;
+        font-family: "Courier New";
+        font-weight: bold;
+        color:white;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Hide the browser's default radio button */
+      .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      /* Create a custom radio button */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 40px;
+        width: 70px;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .container:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+
+      /* When the radio button is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: gold;
+      }
+
+      /* Create the indicator (the dot/circle - hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the indicator (dot/circle) when checked */
+      .container input:checked ~ .checkmark:after {
+        display: block;
+      }
+
+      /* Style the indicator (dot/circle) */
+      .container .checkmark:after {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+        height: 10px;
+        border-radius: 3px;
+        background: black;
+      }
+
+
+
+    </style>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <script>
+      console.log("Inline JS running.");
+      function updateColor(){
+        var red = document.forms['settings'].red.value;
+        var green = document.forms['settings'].green.value;
+        var blue = document.forms['settings'].blue.value;
+        var rgb = blue | (green << 8) | (red << 16);
+        var color = "#" + (0x1000000 + rgb).toString(16).slice(1);
+        document.getElementById("colorUpdate").style.backgroundColor = color;
+      }
+
+    </script>
+  </head>
+  <body>
+    <h1 id="colorUpdate">Glowtie</h1>
+    <form action="" name="settings" id="settings" method="post">
+      <!--Color: <input class="jscolor" value="ffffff" name="color">-->
+      <div id="sliderCont">
+        RED<br />
+        <input type="range" class="slider" min="0" max="255" value="127" name="red" onchange="updateColor()"><br />
+        GREEN<br />
+        <input type="range" class="slider" min="0" max="255" value="127" name="green" onchange="updateColor()"><br />
+        BLUE<br />
+        <input type="range" class="slider" min="0" max="255" value="127" name="blue" onchange="updateColor()"><br />
+      </div>
+
+      <br />
+
+      <div style="width:200px;margin:auto;">
+        <!--
+        <input class="radio" type="radio" name="mode" value="0" checked> Off<br />
+        <input class="radio" type="radio" name="mode" value="2"> Solid<br />
+        <input class="radio" type="radio" name="mode" value="3"> Infinity<br />
+        <input class="radio" type="radio" name="mode" value="4"> Breathe<br />
+        <input class="radio" type="radio" name="mode" value="5"> Burst<br /><br />-->
+
+        <label class="container">Off
+          <input type="radio" checked="checked" name="mode" value="0">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Solid
+          <input type="radio" name="mode" value="2">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Infinity
+          <input type="radio" name="mode" value="3">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Breathe
+          <input type="radio" name="mode" value="4">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Burst
+          <input type="radio" name="mode" value="5">
+          <span class="checkmark"></span>
+        </label>
+
+
+        <button style="width:150px;height:50px;background-color:gold;color:black;position:relative;margin-left:25px;margin-top:20px;font-family: 'Courier New', Courier, monospace;font-size:20px;border:0px;border-radius:10px;" onclick="document.forms['settings'].submit()" type="button">UPDATE</button>
+      </div>
+    </form>
+
+
+  </body>
+</html>
