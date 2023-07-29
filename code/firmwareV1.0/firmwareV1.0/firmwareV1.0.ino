@@ -16,7 +16,7 @@
 #define PIN            12
 #define NUMPIXELS      13
 
-#define SN "glowtie_v0.4_BETA"
+#define SN "PizzaBowtie"
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
