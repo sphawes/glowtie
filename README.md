@@ -1,7 +1,3 @@
-# Glowtie
-
-## The light-up bowtie you control over Wifi
-
 ![](img/glowtie-alpha.png)
 
 ## Connecting to your Glowtie
