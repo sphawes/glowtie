@@ -16,7 +16,7 @@
 #define PIN            12
 #define NUMPIXELS      13
 
-#define SN "PizzaBowtie"
+#define SN "AmbitiousBelt"
 
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 
