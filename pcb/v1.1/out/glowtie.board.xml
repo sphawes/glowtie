@@ -1,0 +1,139 @@
+<openpnp-board version="1.1" name="glowtie.board.xml">
+   <dimensions units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+   <placements>
+      <placement version="1.4" side="Top" id="1uF3" part-id="C_0805-C" type="Placement" enabled="true">
+         <location units="Millimeters" x="57.404" y="-46.482" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="10uF2" part-id="C_0805-C" type="Placement" enabled="true">
+         <location units="Millimeters" x="114.173" y="-42.1005" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="D1" part-id="LED_0805-LED" type="Placement" enabled="true">
+         <location units="Millimeters" x="119.507" y="-35.56" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="D2" part-id="LED_0805-LED" type="Placement" enabled="true">
+         <location units="Millimeters" x="119.507" y="-46.99" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="G***" part-id="glowtieTitle-LOGO" type="Placement" enabled="false">
+         <location units="Millimeters" x="76.2" y="-33.02" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="aa-J1" part-id="USB_Micro-B-USB_OTG" type="Placement" enabled="true">
+         <location units="Millimeters" x="71.12" y="-50.927" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED1" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="50.8" y="-57.15" z="0.0" rotation="40.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED2" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.115" y="-66.04" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED3" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="16.51" y="-50.165" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED4" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="16.51" y="-32.385" z="0.0" rotation="-90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED5" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="31.115" y="-16.51" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED6" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="50.8" y="-25.4" z="0.0" rotation="140.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED7" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="76.2" y="-40.64" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED8" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="101.6" y="-25.4" z="0.0" rotation="-140.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED9" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="121.285" y="-16.51" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED10" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="135.89" y="-32.385" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED11" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="135.89" y="-50.165" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED12" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="121.285" y="-66.04" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="LED13" part-id="LED_WS2812B-PLCC4-WS2812B" type="Placement" enabled="true">
+         <location units="Millimeters" x="101.6" y="-57.15" z="0.0" rotation="-40.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R1" part-id="R_0805-10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="37.338" y="-52.07" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R2" part-id="R_0805-2K" type="Placement" enabled="true">
+         <location units="Millimeters" x="108.966" y="-45.2755" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R3" part-id="R_0805-10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="47.879" y="-30.226" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R4" part-id="R_0805-10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="22.86" y="-50.038" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R5" part-id="R_0805-10K" type="Placement" enabled="true">
+         <location units="Millimeters" x="43.815" y="-30.226" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R470" part-id="R_0805-R" type="Placement" enabled="true">
+         <location units="Millimeters" x="119.507" y="-39.37" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="R470_1" part-id="R_0805-R" type="Placement" enabled="true">
+         <location units="Millimeters" x="119.507" y="-43.18" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="REF1" part-id="Fiducial_1mm_Mask2mm-Fiducial_1mm_Mask2mm" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="112.25" y="-15.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="REF2" part-id="Fiducial_1mm_Mask2mm-Fiducial_1mm_Mask2mm" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="14.75" y="-41.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="REF3" part-id="Fiducial_1mm_Mask2mm-Fiducial_1mm_Mask2mm" type="Fiducial" enabled="true">
+         <location units="Millimeters" x="127.25" y="-65.25" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="aa-SW1" part-id="SW_SPDT_PCM12-SW_SPDT" type="Placement" enabled="true">
+         <location units="Millimeters" x="81.28" y="-52.07" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="U1" part-id="SOT-23-5-MCP73831-2-OT" type="Placement" enabled="true">
+         <location units="Millimeters" x="108.966" y="-41.2115" z="0.0" rotation="180.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="aa-U3" part-id="ESP-12E_SMD-ESP-12F" type="Placement" enabled="false">
+         <location units="Millimeters" x="39.0" y="-41.25" z="0.0" rotation="90.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+      <placement version="1.4" side="Top" id="U4" part-id="SOT-223-3_TabPin2-AZ1117-3.3" type="Placement" enabled="true">
+         <location units="Millimeters" x="57.4" y="-41.3" z="0.0" rotation="0.0"/>
+         <error-handling>Alert</error-handling>
+      </placement>
+   </placements>
+   <fiducials/>
+   <solder-paste-pads/>
+</openpnp-board>

@@ -1,0 +1,6 @@
+<openpnp-board version="1.1" name="test.board.xml">
+   <dimensions units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+   <placements/>
+   <fiducials/>
+   <solder-paste-pads/>
+</openpnp-board>

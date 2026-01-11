@@ -1,0 +1,39 @@
+### Footprint positions - created on 2023 September 28, Thursday 17:19:00 ###
+### Printed by KiCad version 7.0.2-0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                   Package                    PosX       PosY       Rot  Side
+1uF3      C                     C_0805                  57.4040   -46.4820    0.0000  top
+10uF2     C                     C_0805                 114.1730   -42.1005  -90.0000  top
+D1        LED                   LED_0805               119.5070   -35.5600  180.0000  top
+D2        LED                   LED_0805               119.5070   -46.9900    0.0000  top
+G***      LOGO                  glowtieTitle            76.2000   -33.0200    0.0000  top
+J1        USB_OTG               USB_Micro-B             71.1200   -50.9270    0.0000  top
+LED1      WS2812B               LED_WS2812B-PLCC4       50.8000   -57.1500   40.0000  top
+LED2      WS2812B               LED_WS2812B-PLCC4       31.1150   -66.0400    0.0000  top
+LED3      WS2812B               LED_WS2812B-PLCC4       16.5100   -50.1650  -90.0000  top
+LED4      WS2812B               LED_WS2812B-PLCC4       16.5100   -32.3850  -90.0000  top
+LED5      WS2812B               LED_WS2812B-PLCC4       31.1150   -16.5100  180.0000  top
+LED6      WS2812B               LED_WS2812B-PLCC4       50.8000   -25.4000  140.0000  top
+LED7      WS2812B               LED_WS2812B-PLCC4       76.2000   -40.6400  180.0000  top
+LED8      WS2812B               LED_WS2812B-PLCC4      101.6000   -25.4000  -140.0000  top
+LED9      WS2812B               LED_WS2812B-PLCC4      121.2850   -16.5100  180.0000  top
+LED10     WS2812B               LED_WS2812B-PLCC4      135.8900   -32.3850   90.0000  top
+LED11     WS2812B               LED_WS2812B-PLCC4      135.8900   -50.1650   90.0000  top
+LED12     WS2812B               LED_WS2812B-PLCC4      121.2850   -66.0400    0.0000  top
+LED13     WS2812B               LED_WS2812B-PLCC4      101.6000   -57.1500  -40.0000  top
+R1        10K                   R_0805                  37.3380   -52.0700    0.0000  top
+R2        2K                    R_0805                 108.9660   -45.2755    0.0000  top
+R3        10K                   R_0805                  47.8790   -30.2260    0.0000  top
+R4        10K                   R_0805                  22.8600   -50.0380   90.0000  top
+R5        10K                   R_0805                  43.8150   -30.2260    0.0000  top
+R470      R                     R_0805                 119.5070   -39.3700    0.0000  top
+R470_1    R                     R_0805                 119.5070   -43.1800    0.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm   112.2500   -15.2500    0.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm    14.7500   -41.2500    0.0000  top
+REF**     Fiducial_1mm_Mask2mm  Fiducial_1mm_Mask2mm   127.2500   -65.2500    0.0000  top
+SW1       SW_SPDT               SW_SPDT_PCM12           81.2800   -52.0700    0.0000  top
+U1        MCP73831-2-OT         SOT-23-5               108.9660   -41.2115  180.0000  top
+U3        ESP-12F               ESP-12E_SMD             34.9250   -48.2600   90.0000  top
+U4        AZ1117-3.3            SOT-223-3_TabPin2       57.4000   -41.3000    0.0000  top
+## End

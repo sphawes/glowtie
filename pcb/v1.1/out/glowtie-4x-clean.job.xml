@@ -1,0 +1,51 @@
+<openpnp-job version="2.0">
+   <root-panel version="2.0">
+      <dimensions units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+      <placements/>
+      <children>
+         <object class="org.openpnp.model.BoardLocation" side="Top" id="Brd1" file-name="/Users/stephen/glowtie/pcb/v1.1/out/glowtie.board.xml" check-fiducials="true" locally-enabled="true">
+            <location units="Millimeters" x="335.0588451279201" y="350.9002624283792" z="-27.5" rotation="-89.76160411099251"/>
+         </object>
+         <object class="org.openpnp.model.BoardLocation" side="Top" id="Brd2" file-name="/Users/stephen/glowtie/pcb/v1.1/out/glowtie.board.xml" check-fiducials="true" locally-enabled="true">
+            <location units="Millimeters" x="392.18878100928123" y="350.9633983759869" z="-27.5" rotation="-89.78579789227597"/>
+         </object>
+         <object class="org.openpnp.model.BoardLocation" side="Top" id="Brd3" file-name="/Users/stephen/glowtie/pcb/v1.1/out/glowtie.board.xml" check-fiducials="true" locally-enabled="true">
+            <location units="Millimeters" x="335.55155084668934" y="224.0797801488371" z="-27.0" rotation="-89.8111156912222"/>
+         </object>
+         <object class="org.openpnp.model.BoardLocation" side="Top" id="Brd4" file-name="/Users/stephen/glowtie/pcb/v1.1/out/glowtie.board.xml" check-fiducials="true" locally-enabled="true">
+            <location units="Millimeters" x="392.6783330142582" y="224.00054625208264" z="-27.0" rotation="-89.83779332995633"/>
+         </object>
+      </children>
+      <pseudo-placement-ids/>
+   </root-panel>
+   <placed-status-map class="java.util.HashMap">
+      <entry>
+         <string>Brd1⇒1uF3</string>
+         <boolean>false</boolean>
+      </entry>
+      <entry>
+         <string>Brd1⇒aa-U3</string>
+         <boolean>false</boolean>
+      </entry>
+   </placed-status-map>
+   <enabled-state-map class="java.util.HashMap">
+      <entry>
+         <string>Brd4⇒aa-U3</string>
+         <boolean>true</boolean>
+      </entry>
+      <entry>
+         <string>Brd2⇒aa-U3</string>
+         <boolean>true</boolean>
+      </entry>
+      <entry>
+         <string>Brd3⇒aa-U3</string>
+         <boolean>true</boolean>
+      </entry>
+      <entry>
+         <string>Brd1⇒aa-U3</string>
+         <boolean>true</boolean>
+      </entry>
+   </enabled-state-map>
+   <check-fiducials-state-map class="java.util.HashMap"/>
+   <error-handling-state-map class="java.util.HashMap"/>
+</openpnp-job>
